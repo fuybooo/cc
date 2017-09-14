@@ -8,9 +8,9 @@
             <div ngbDropdown>
                 <img alt="image" class="rounded-circle" [src]="mainData.userData.userAvatar" (click)="avatarReplacement()"/>
                 <div class="c-user-profile">
-                    <span ngbDropdownToggle>{{mainData.userData.userName}}</span>
+                    <span ngbDropdownToggle id="header-profile">{{mainData.userData.userName}}</span>
                 </div>
-                <div class="dropdown-menu animated fadeIn">
+                <div class="dropdown-menu animated fadeIn" aria-labelledby="header-profile">
                     <button class="dropdown-item" (click)="userInfo()"><i class="fa  fa-user-circle-o  fa-fw"></i> 个人资料</button>
                     <button class="dropdown-item" (click)="passwordEdit()"><i class="fa  fa-key fa-fw"></i> 修改密码</button>
                     <button class="dropdown-item" (click)="exitSys()"><i class="fa  fa-sign-out fa-fw"></i> 退出系统</button>
